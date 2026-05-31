@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #030712;
+  color: white;
+  font-family: Arial;
+}
+
+#login, #chat {
+  padding: 20px;
+}
+
+#chat {
+  display: none;
+}
+
+#messages {
+  height: 70vh;
+  overflow-y: auto;
+  border: 1px solid #334155;
+  padding: 10px;
+}
+
+.msg {
+  margin-bottom: 10px;
+}
+
+.msg img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+}

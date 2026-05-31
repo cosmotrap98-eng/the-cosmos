@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Cosmos</title>
+  <link rel="stylesheet" href="cosmos.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Welcome to The Cosmos</h2>
+  <input id="username" placeholder="Username"><br><br>
+  <input id="password" type="password" placeholder="Password"><br><br>
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="chat">
+  <h2>The Cosmos</h2>
+  <img id="pfp" width="50" height="50" style="border-radius:50%">
+  <span id="name"></span>
+  <br><br>
+
+  <input type="file" id="pfpUpload">
+  <button onclick="uploadPfp()">Upload PFP</button>
+
+  <div id="messages"></div>
+
+  <input id="msgBox" placeholder="Send a message">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="cosmos.js"></script>
+
+</body>
+</html>
